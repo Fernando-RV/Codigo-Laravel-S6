@@ -23,14 +23,14 @@ class CreateServicioRequest extends FormRequest
     {
         return [
             'titulo' => 'required',
-            'descripcion' => 'required'
+            'description' => 'required'
         ];
     }
 
     public function messages(){
         return [
-            'titulo.required' => 'Es obligatorio un titulo para el servicio',
-            'descripcion.required' => 'Es obligatorio el campo descripcion'
+            'titulo.required' => 'El campo titulo es obligatorio',
+            'description.required' => 'El campo descripcion es obligatorio'
         ];
     }
 }
